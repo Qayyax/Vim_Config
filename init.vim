@@ -51,7 +51,7 @@ nnoremap ! :r ~/.config/nvim/snippets/html5boilerplate.txt<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " Map Esc to exit terminal
-tnoremap <Esc> <C-\><C-n>:q!<CR>
+tnoremap <Esc> <C-\><C-n>
 
 augroup TransparentBackground
     autocmd!
