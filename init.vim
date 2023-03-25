@@ -53,6 +53,10 @@ nmap <F8> :TagbarToggle<CR>
 " Map Esc to exit terminal
 tnoremap <Esc> <C-\><C-n>:q!<CR>
 
+" Map Esc to capslock
+imap <CapsLock> <Esc>
+nmap <CapsLock> <Esc>
+
 augroup TransparentBackground
     autocmd!
     autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
