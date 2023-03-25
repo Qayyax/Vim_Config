@@ -13,7 +13,7 @@
 :set ignorecase
 :set smartcase
 :set background=dark
-"nothing is here 
+
 
 call plug#begin()
 
@@ -43,10 +43,15 @@ nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <C-q> :q<CR> "quit vim with ctrl q
 nnoremap <C-s> :w<CR> "write vim with ctrl w
 
+
+
 " Map ! key to insert HTML5 boilerplate with proper indentation
 nnoremap ! :r ~/.config/nvim/snippets/html5boilerplate.txt<CR>
 
 nmap <F8> :TagbarToggle<CR>
+
+" Map Esc to exit terminal
+tnoremap <Esc> <C-\><C-n>:q!<CR>
 
 augroup TransparentBackground
     autocmd!
