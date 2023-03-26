@@ -13,6 +13,8 @@ Open a terminal and run the following command to download the vim-plug plugin ma
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     
+if it doesn't work, check how to install vim plug online
+    
 This will download the plug.vim script and save it to the ~/.vim/autoload/ directory.
 
 Once the download is complete,open nvim and run the command :PlugInstall
