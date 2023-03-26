@@ -10,9 +10,8 @@ Before you open nvim, you need to install vim-plug in your terminal
 Open a terminal and run the following command to download the vim-plug plugin manager:
 
 
-[click here] (curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
-
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     
 This will download the plug.vim script and save it to the ~/.vim/autoload/ directory.
 
