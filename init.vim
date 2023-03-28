@@ -31,6 +31,7 @@ Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'ellisonleao/gruvbox.nvim' "gruvbox color scheme
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tomtom/tcomment_vim' "auto- complete
 
 set encoding=UTF-8
 
@@ -42,6 +43,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <C-q> :q<CR> "quit vim with ctrl q
 nnoremap <C-s> :w<CR> "write vim with ctrl w
+nnoremap <C-/> :<C-u>call tcomment#Toggle()<CR> " comment with ctrl /
 
 
 
@@ -75,6 +77,12 @@ autocmd FileType html,css,javascript setlocal omnifunc=coc#complete
 
 " Show signature help for JavaScript functions
 autocmd FileType javascript nmap <leader>k :call CocAction('showSignatureHelp')<CR>
+
+" ---- Notes on autocomplete ---
+" To comment a single line, place the cursor on the line and type gcc.
+" To comment a block of code, select the lines using visual mode and type gc.
+" To uncomment a single line, place the cursor on the commented line and type gcu.
+" To uncomment a block of code, select the commented lines using visual mode and type gcs.
 
 " --- Just Some Notes ---
 " :PlugClean :PlugInstall :UpdateRemotePlugins
