@@ -44,6 +44,7 @@ nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <C-q> :q<CR> "quit vim with ctrl q
 nnoremap <C-s> :w<CR> "write vim with ctrl w
 nnoremap <C-/> :<C-u>call tcomment#Toggle()<CR> " comment with ctrl /
+inoremap jk <Esc>
 
 
 
